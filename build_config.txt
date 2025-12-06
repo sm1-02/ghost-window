@@ -1,0 +1,3 @@
+GPP_PATH=C:\Path\To\Your\g++.exe
+CXXFLAGS=-std=c++17 -O2
+LDFLAGS=-static
