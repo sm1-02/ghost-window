@@ -1,14 +1,18 @@
-GhostWindow
+# GhostWindow
 Small Windows utility that lets you control one window using global hotkeys.
 
-First-use behavior
+# First-use behavior
 The first time you press Alt+A, the currently focused window becomes the “locked” target.
 All future hotkeys apply only to this one window.
 
-Hotkeys
+# Hotkeys
 Alt + A → Toggle transparency
 Alt + Mouse Wheel → Adjust transparency
 Alt + T → Toggle always-on-top
 Alt + X → Minimize / restore
 Alt + Q → Exit GhostWindow
 
+# Build
+Setup build_config.txt and then run build_ghostwindow.bat
+## or manually using MinGW
+g++ .\ghostwindow.cpp -lgdi32 -luser32 -lshell32 -mwindows -static -o .\ghostwindow.exe
